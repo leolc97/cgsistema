@@ -1,0 +1,4 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2022-04-25 21:52:08 --> Query error: Unknown column 'formaPgtoOs' in 'field list' - Invalid query: UPDATE `os` SET `dataFinal` = '2022-04-27', `garantia` = '90', `garantias_id` = NULL, `descricaoProduto` = '66666666', `defeito` = '77777777', `status` = 'Orçamento', `observacoes` = '88888888888', `laudoTecnico` = '999999999999999999', `usuarios_id` = '1', `clientes_id` = '7', `tecnicores` = 'Leonardo Loureiro Covari', `valorterceirizado` = '', `dataSaida` = '28/04/2022', `modeloter` = '', `serter` = '', `retornoterceirizada` = '', `contactter` = '', `responsavel` = '', `nometer` = '', `desconto` = '0,00', `rastreio` = '555555', `perife` = 'Sem Periférico', `cor` = '111', `secu` = '333333', `marca` = '22222', `serial` = '444444', `horasaida` = '12:00', `formaPgtoOs` = 'Cartão de Crédito', `parcelOs` = 'x2'
+WHERE `idOs` = '33'
