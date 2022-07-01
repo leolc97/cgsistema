@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 <title><?php $configuracoes = $this->db->get('configuracoes')->result();
-echo $configuracoes[0]->valor?> - CG Sistema para Lojas de Informática</title>
+echo $configuracoes[0]->valor?> - CG Sistema para Lojas de Informática e testes</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/bootstrap.min.css" />
