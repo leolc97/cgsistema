@@ -209,153 +209,6 @@
                                     </div>
 
 
-                                    <br><br>
-
-                                    <div class="row-fluid" style="margin-top:0">
-
-                                        <div class="span12">
-
-                                            <div class="widget-box">
-
-                                                <div class="widget-title">
-
-
-
-                                                    <br>
-                                                    <center><span style="font-size: 15px"><b>Formas de Pagamento / Garantia</b></span></center>
-                                                    <br>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <br>
-
-                                    <!-- Div campo forma de pagamento -->
-                                    <div class="span3">
-
-                                        <label for="formaPgto">Forma de Pagamento</label>
-                                        <select name="formaPgto" id="formaPgto" class="span8">
-
-
-
-
-                                            <option <?php if ($result->formaPgto == '') {
-                                                        echo 'selected';
-                                                    } ?> value=""></option>
-                                            <option <?php if ($result->formaPgto == 'Dinheiro') {
-                                                        echo 'selected';
-                                                    } ?> value="Dinheiro">Dinheiro</option>
-                                            <option <?php if ($result->formaPgto == 'Cartão de Crédito') {
-                                                        echo 'selected';
-                                                    } ?> value="Cartão de Crédito">Cartão de Crédito</option>
-                                            <option <?php if ($result->formaPgto == 'Débito') {
-                                                        echo 'selected';
-                                                    } ?> value="Débito">Débito</option>
-                                            <option <?php if ($result->formaPgto == 'Boleto') {
-                                                        echo 'selected';
-                                                    } ?> value="Boleto">Boleto</option>
-                                            <option <?php if ($result->formaPgto == 'Depósito') {
-                                                        echo 'selected';
-                                                    } ?> value="Depósito">Depósito</option>
-                                            <option <?php if ($result->formaPgto == 'Pix') {
-                                                        echo 'selected';
-                                                    } ?> value="Pix">Pix</option>
-                                            <option <?php if ($result->formaPgto == 'Cheque') {
-                                                        echo 'selected';
-                                                    } ?> value="Cheque">Cheque</option>
-
-
-
-
-
-
-
-
-                                        </select>
-
-
-
-                                    </div>
-                                    <!-- fim campo forma de pagamento -->
-
-                                    <!-- Div campo parcelamento -->
-
-                                    <div class="span2">
-                                        <label for="formaparcel">Parcelamento</label>
-                                        <select name="formaparcel" id="formaparcel" class="span6">
-
-
-                                            <option <?php if ($result->formaparcel == '') {
-                                                        echo 'selected';
-                                                    } ?> value=""></option>
-                                            <option <?php if ($result->formaparcel == 'Avista') {
-                                                        echo 'selected';
-                                                    } ?> value="Avista">A vista</option>
-                                            <option <?php if ($result->formaparcel == 'x1') {
-                                                        echo 'selected';
-                                                    } ?> value="x1">x1</option>
-                                            <option <?php if ($result->formaparcel == 'x2') {
-                                                        echo 'selected';
-                                                    } ?> value="x2">x2</option>
-                                            <option <?php if ($result->formaparcel == 'x3') {
-                                                        echo 'selected';
-                                                    } ?> value="x3">x3</option>
-                                            <option <?php if ($result->formaparcel == 'x4') {
-                                                        echo 'selected';
-                                                    } ?> value="x4">x4</option>
-                                            <option <?php if ($result->formaparcel == 'x5') {
-                                                        echo 'selected';
-                                                    } ?> value="x5">x5</option>
-                                            <option <?php if ($result->formaparcel == 'x6') {
-                                                        echo 'selected';
-                                                    } ?> value="x6">x6</option>
-                                            <option <?php if ($result->formaparcel == 'x7') {
-                                                        echo 'selected';
-                                                    } ?> value="x7">x7</option>
-                                            <option <?php if ($result->formaparcel == 'x8') {
-                                                        echo 'selected';
-                                                    } ?> value="x8">x8</option>
-                                            <option <?php if ($result->formaparcel == 'x9') {
-                                                        echo 'selected';
-                                                    } ?> value="x9">x9</option>
-                                            <option <?php if ($result->formaparcel == 'x10') {
-                                                        echo 'selected';
-                                                    } ?> value="x10">x10</option>
-                                            <option <?php if ($result->formaparcel == 'x11') {
-                                                        echo 'selected';
-                                                    } ?> value="x11">x11</option>
-                                            <option <?php if ($result->formaparcel == 'x12') {
-                                                        echo 'selected';
-                                                    } ?> value="x12">x12</option>
-
-
-                                        </select>
-
-
-
-                                    </div>
-
-
-                                    <div class="span2">
-                                        <label for="descontovenda">Desconto</label>
-                                        <?php echo "R$: " ?>
-                                        <input id="descontovenda" class="span5" name="descontovenda" class="money" value="<?php echo number_format($result->descontovenda, 2, ',', '.'); ?>" />
-                                    </div>
-
-
-                                    <!-- fim campo parcelamento -->
-
-                                    <div class="span2">
-                                        <label for="datagarat">Garantia Em Dias</label>
-                                        <input id="datagarat" type="text" class="span5" name="datagarat" maxlength="30" value="<?php echo $result->datagarat ?>" />
-                                    </div>
-
-                                    <br><br><br>
-
-                                    <br><br>
-
-
                                     <div class="span6" style="padding: 1%; margin-left: 0">
                                         <label for="observacoes">
                                             <h5>
@@ -657,6 +510,7 @@
 <!-- Modal WhatsApp-->
 
 <div id="modal-whatsapp" class="modal hide fade widget_box_vizualizar4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <?php echo 'test'; ?>
 
     <form action="<?php echo current_url() ?>" method="post">
 
@@ -684,7 +538,6 @@
                     $totaldesconto = number_format($total - $result->descontovenda, 2, ',', '.');
 
                     $linkaux = urlencode($configuration['whats_app4'] . '?&c=' . $result->documento . '&e=' . $result->email);
-
 
                     $ua = strtolower($_SERVER["HTTP_USER_AGENT"]);
                     $isMob = is_numeric(strpos($ua, "mobile"));

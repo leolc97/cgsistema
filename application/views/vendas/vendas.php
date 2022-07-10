@@ -131,7 +131,7 @@ echo $configuracoes[0]->valor?></div>
                         echo '<td>' . $r->idVendas . '</td>';
                         echo '<td>' . $dataVenda . '</td>';
                         echo '<td><a href="' . base_url() . 'index.php/clientes/visualizar/' . $r->idClientes . '">' . $r->nomeCliente . '</a></td>';
-                        echo '<td>' . "R$: " .  number_format($r->valorTotal,2,',','.') . '</td>';
+                        echo '<td>' . "R$: " .  number_format($r->valorTotalComDesconto,2,',','.') . '</td>';
 
 
                         /*<div align="center"><strong>R$: <?php echo number_format($total, 2, ',', '.'); ?></strong></div> <input type="hidden" id="total-venda" value="<?php echo number_format($total, 2); ?>">
