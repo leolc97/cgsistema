@@ -1,3 +1,3 @@
 # cgsistema
 Informática CgSistema
-Sistema da CgSistema
+Site baseado no MAPOS - https://github.com/RamonSilva20/mapos
